@@ -20,7 +20,7 @@ public class UnsynchBankTest {
         System.out.println(bank.getTotalBalance());
         for (int i = 0; i < NACCOUNTS; i++) {
             int fromAccount = i;
-            Runnable r = () ->{
+            Func r = () ->{
                 try
                 {
                     while(true)
@@ -41,3 +41,5 @@ public class UnsynchBankTest {
         }
     }
 }
+
+
